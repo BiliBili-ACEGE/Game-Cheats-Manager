@@ -21,7 +21,7 @@ def resource_path(relative_path):
 
 def apply_settings(settings):
     with open(SETTINGS_FILE, "w") as f:
-        json.dump(settings, indent=4)
+        json.dump(settings, f, indent=4)
 
 
 def load_settings():
